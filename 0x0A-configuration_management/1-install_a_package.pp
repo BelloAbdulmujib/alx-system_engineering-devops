@@ -1,10 +1,11 @@
-# A puppet manifest that creates a file school in /tmp.
-# The file (School) has permissions 0744, belonging to the user and group
-# www-data.
-file { '/tmp/school':
-  ensure  => present,
-  mode    => '0744',
-  owner   => 'www-data',
-  group   => 'www-data',
-  content => 'I love Puppet',
+#This will install flask with a version of 2.1.0
+package{'flaskg':
+  ensure => '2.1.0',
+  provider => 'pip3',
+}
+
+#This will install Werkzeug with a version of 2.1.0
+package{'Werkzeug':
+  ensure => '2.1.1',
+  providwr => 'pip3',
 }
