@@ -6,5 +6,5 @@ package{'flaskg':
 #This will install werkzeug with a version of 2.1.1
 package{'Werkzeug':
   ensure   => '2.1.1',
-  providwr => 'pip3',
+  provider => 'pip3',
 }
