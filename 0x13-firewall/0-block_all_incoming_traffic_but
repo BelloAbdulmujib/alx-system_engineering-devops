@@ -1,0 +1,22 @@
+#!/bin/env bash
+# This commands updates and install UFW
+sudo apt update
+sudo apt install ufw
+
+# This command line checks the currrent status of the UFW
+sudo ufw status verbose
+
+# The below code the default policies
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+# This command allow incoming connections on the TCP ports for SSH (22), HTTP (80), and HTTPS (443):
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+
+# The code below enables UWF
+sudo ufw enable
+
+# The command below list all active rules and the default policies
+sudo ufw status verbose
