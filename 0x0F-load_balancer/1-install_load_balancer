@@ -40,8 +40,8 @@ frontend belloabdulmujib-tech-frontend
 
 backend belloabdulmujib-tech-backend
     balance roundrobin
-    server 523734-web-01 54.237.125.27:80 check
-    server 523734-web-02 52.72.9.40:80 check
+    server 523734-web-01 54.162.223.202:80 check
+    server 523734-web-02 54.162.223.202:80 check
 "
 
 # shellcheck disable=SC2154
