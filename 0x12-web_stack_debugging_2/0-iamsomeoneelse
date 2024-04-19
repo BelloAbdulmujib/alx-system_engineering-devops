@@ -1,6 +1,3 @@
 #!/bin/ env bash
-# Assigning a variable to the argument
-ARGUMEN=$1
-
 # The script below run the whoami command under the user passed as an argument
 sudo -u "$1" whoami
