@@ -7,4 +7,4 @@ sed -Ei 's/(listen (\[::\]:)?80) /\180 /' /etc/nginx/sites-enabled/default
 pkill apache2
 
 # restart
-su nginx -s /bin/bash -c 'service nginx restart't
+su nginx -s /bin/bash -c 'service nginx restart'
