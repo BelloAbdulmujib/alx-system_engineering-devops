@@ -4,7 +4,7 @@
  import sys
  import requests as r
 
-  if __name__ == "--main--":
+  if __name__ == '--main--':
        url = 'https://jsonplaceholder.typicode.com/'
     usr_id = r.get(url + 'users/{}'.format(sys.argv[1])).json()
     to_do = r.get(url + 'todos', params={'userId': sys.argv[1]}).json()
