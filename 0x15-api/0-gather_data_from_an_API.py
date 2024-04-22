@@ -1,11 +1,11 @@
 #!/usr/bin/python3
  """This script used API to get information of a user and return the TODO list progress"""
 
- import sys
  import requests as r
+ import sys
 
   if __name__ == '--main--':
-       url = 'https://jsonplaceholder.typicode.com/'
+    url = 'https://jsonplaceholder.typicode.com/'
     usr_id = r.get(url + 'users/{}'.format(sys.argv[1])).json()
     to_do = r.get(url + 'todos', params={'userId': sys.argv[1]}).json()
 #    print(to_do)
