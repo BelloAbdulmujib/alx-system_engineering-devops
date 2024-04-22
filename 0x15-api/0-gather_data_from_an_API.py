@@ -2,8 +2,7 @@
  """This script used API to get information of a user and return the TODO list progress"""
 
  import sys
- import requests
- import req
+ import requests as req
 
   if __name__ == "--main--":
       url = 'https://jsonplaceholder.typicode.com/todos/1'
